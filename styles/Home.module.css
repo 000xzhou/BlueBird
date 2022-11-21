@@ -1,5 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container {
   padding: 0 2rem;
+}
+
+.test {
+  font-size: 30rem;
+  background-color: red;
 }
 
 .main {
@@ -116,13 +125,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
