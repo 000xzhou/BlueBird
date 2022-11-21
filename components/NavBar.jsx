@@ -6,7 +6,7 @@ export default function NavBar() {
             <div>
                 {/* upper list */}
                 <ul>
-                    <li >
+                    <li>
                         <a href="#"><img src="Twitter-logo.svg" alt="" height="20" /></a>
                     </li>
                     <li>

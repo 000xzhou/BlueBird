@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import NavBar from './components/NavBar.jsx'
-import SideBar from './components/SideBar.jsx'
-import Profile from './components/Profile.jsx'
+import NavBar from '../../components/NavBar.jsx'
+import SideBar from '../../components/SideBar.jsx'
+import Profile from '../../components/Profile.jsx'
 
 // can't change homepage to profile page?
 export default function ProfilePage() {

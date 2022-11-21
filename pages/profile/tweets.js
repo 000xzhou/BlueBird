@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import NavBar from './components/NavBar.jsx'
-import SideBar from './components/SideBar.jsx'
-import Tweet from './components/Tweet.jsx'
+import NavBar from '../../components/NavBar.jsx'
+import SideBar from '../../components/SideBar.jsx'
+import Tweet from '../../components/Tweet.jsx'
 
 // It redir to that person's profile/status
 // in this case profile/tweets

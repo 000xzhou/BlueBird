@@ -8,9 +8,9 @@ import { useRouter } from 'next/router'
 
 import styles from '../styles/Home.module.css'
 
-import NavBar from './components/NavBar.jsx'
-import SideBar from './components/SideBar.jsx'
-import Home from './components/Home.jsx'
+import NavBar from '../components/NavBar.jsx'
+import SideBar from '../components/SideBar.jsx'
+import Home from '../components/Home.jsx'
 
 export default function HomePage() {
 
