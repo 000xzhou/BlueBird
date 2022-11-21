@@ -5,7 +5,7 @@ export default function SideBar() {
                 <input type="text" placeholder="Search BlueBird" />
             </section>
             <section>
-                <div>WHat's happening</div>
+                <div>What's happening</div>
                 <div>News</div>
                 <div>News</div>
                 <div>News</div>

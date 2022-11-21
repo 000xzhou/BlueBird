@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 // import Link from 'next/link'
 
-import { useState } from 'react'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+// import { useState } from 'react'
+// import { useEffect } from 'react'
+// import { useRouter } from 'next/router'
 
 import styles from '../styles/Home.module.css'
 
@@ -13,7 +13,19 @@ import SideBar from '../components/SideBar.jsx'
 import Home from '../components/Home.jsx'
 
 export default function HomePage() {
-
+  // temp user
+  const user = {
+    _id: 1,
+    name: "birdy",
+    username: "bird",
+    password: "password123"
+  }
+  //temp tweet
+  const tweet = {
+    _id: 1,
+    username: "bird",
+    message: "This is a message."
+  }
 
   return (
     <div className={styles.container}>
@@ -23,11 +35,11 @@ export default function HomePage() {
         <link rel="icon" href="/Twitter-logo.svg" />
       </Head>
       <header>
-        <NavBar />
+        <NavBar user={user} />
       </header>
       <main>
         <div>
-          <Home />
+          <Home tweet={tweet} />
           <SideBar />
         </div>
       </main>

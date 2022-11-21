@@ -4,7 +4,8 @@ import NavBar from '../../components/NavBar.jsx'
 import SideBar from '../../components/SideBar.jsx'
 import Profile from '../../components/Profile.jsx'
 
-// can't change homepage to profile page?
+//This page should return twitter.com/profileUsername
+// need to change this to  [profile].js
 export default function ProfilePage() {
 
     return (

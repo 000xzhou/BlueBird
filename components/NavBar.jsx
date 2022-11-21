@@ -1,13 +1,13 @@
 import styles from './css/NavBar.module.css'
 
-export default function NavBar() {
+export default function NavBar(props) {
     return (
         <nav>
             <div>
                 {/* upper list */}
                 <ul>
                     <li>
-                        <a href="#"><img src="Twitter-logo.svg" alt="" height="20" /></a>
+                        <a href="#"><img className='w-10' src="Twitter-logo.svg" alt="" /></a>
                     </li>
                     <li>
                         <a href="#">Home</a>
@@ -30,8 +30,8 @@ export default function NavBar() {
             <div>
                 <div>Profile Icon</div>
                 <div>
-                    <div>Profile name</div>
-                    <div>username</div>
+                    <div>{props.user.name}</div>
+                    <div>{props.user.username}</div>
                 </div>
                 <div>...</div>
                 <div>

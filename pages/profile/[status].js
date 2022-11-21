@@ -1,11 +1,11 @@
 import Head from 'next/head'
-
+//This page should return twitter.com/profileUsername/status/message id
 import NavBar from '../../components/NavBar.jsx'
 import SideBar from '../../components/SideBar.jsx'
 import Tweet from '../../components/Tweet.jsx'
 
-// It redir to that person's profile/status
-// in this case profile/tweets
+//This page should return twitter.com/profileUsername/status/message id
+// soo... might have to change stuff
 export default function TweetPage() {
 
     return (
