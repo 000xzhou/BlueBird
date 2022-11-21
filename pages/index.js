@@ -12,6 +12,8 @@ import NavBar from '../components/NavBar.jsx'
 import SideBar from '../components/SideBar.jsx'
 import Home from '../components/Home.jsx'
 
+// This page should just redirt them to the home.js (need to be created)
+
 export default function HomePage() {
   // temp user
   const user = {
