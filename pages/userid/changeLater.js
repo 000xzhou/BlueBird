@@ -7,7 +7,8 @@ import Tweet from '../../components/Tweet.jsx'
 //This page should return twitter.com/profileUsername/status/message id
 // soo... might have to change stuff
 export default function TweetPage() {
-
+    //   [userid]/status?status=[status.id]
+    // how? 
     return (
         <div>
             <Head>

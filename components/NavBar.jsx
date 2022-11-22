@@ -1,6 +1,5 @@
-import styles from './css/NavBar.module.css'
 
-export default function NavBar(props) {
+export default function NavBar() {
     return (
         <nav>
             <div>
@@ -22,7 +21,7 @@ export default function NavBar(props) {
                         <a href="#">Profile</a>
                     </li>
                 </ul>
-                <button className={styles.test}>Tweet</button>
+                <button>Tweet</button>
             </div>
             {/* upper list */}
 
@@ -30,8 +29,8 @@ export default function NavBar(props) {
             <div>
                 <div>Profile Icon</div>
                 <div>
-                    <div>{props.user.name}</div>
-                    <div>{props.user.username}</div>
+                    <div>{ }</div>
+                    <div>{ }</div>
                 </div>
                 <div>...</div>
                 <div>

@@ -1,13 +1,15 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
-import NavBar from '../../components/NavBar.jsx'
-import SideBar from '../../components/SideBar.jsx'
-import Profile from '../../components/Profile.jsx'
+import NavBar from '../components/NavBar.jsx'
+import SideBar from '../components/SideBar.jsx'
+import Profile from '../components/Profile.jsx'
 
 //This page should return twitter.com/profileUsername
-// need to change this to  [profile].js
-export default function ProfilePage() {
 
+export default function ProfilePage() {
+    const router = useRouter()
+    const userId = router.query.userId
     return (
         <div>
             <Head>
@@ -20,6 +22,7 @@ export default function ProfilePage() {
             </header>
             <main>
                 <div>
+                    {/* maybe it don't need profile component and just put it here?  */}
                     <Profile />
                     <SideBar />
                 </div>

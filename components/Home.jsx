@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link'
 
 export default function Home(props) {
     // console.log(props.tweet)
@@ -30,12 +31,12 @@ export default function Home(props) {
             <section>
                 <div>{messages}</div>
                 <div>
-                    <div>{props.tweet.username}</div>
-                    <div>{props.tweet.message}</div>
+                    <div>user</div>
+                    <div>message</div>
                 </div>
                 <div>
-                    <div>{props.tweet.username}</div>
-                    <div>{props.tweet.message}</div>
+                    <div>other user</div>
+                    <div>message</div>
                 </div>
             </section>
         </div>

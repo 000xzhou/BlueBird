@@ -1,10 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import Link from 'next/link'
+import Link from 'next/link'
 
-// import { useState } from 'react'
-// import { useEffect } from 'react'
-// import { useRouter } from 'next/router'
 
 import styles from '../styles/Home.module.css'
 
@@ -37,11 +34,11 @@ export default function HomePage() {
         <link rel="icon" href="/Twitter-logo.svg" />
       </Head>
       <header>
-        <NavBar user={user} />
+        <NavBar />
       </header>
       <main>
         <div>
-          <Home tweet={tweet} />
+          <Home />
           <SideBar />
         </div>
       </main>
