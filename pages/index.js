@@ -31,7 +31,8 @@ export default function HomePage() {
   ]
 
   return (
-    <div>
+    // classname don't effect nav and sidebar
+    <div >
       <Head>
         <title>Blue Bird</title>
         <meta name="description" content="Clone of the blue bird I meant twitter" />
