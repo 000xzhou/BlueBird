@@ -1,5 +1,5 @@
 
-export default function NavBar() {
+export default function NavBar(props) {
     return (
         <nav>
             <div>
@@ -9,16 +9,16 @@ export default function NavBar() {
                         <a href="#"><img className='w-10' src="Twitter-logo.svg" alt="" /></a>
                     </li>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#"><img className='w-10' src="/svg/bxs-home-circle.svg" alt="" />Home</a>
                     </li>
                     <li>
-                        <a href="#">Explore</a>
+                        <a href="#"><img className='w-10' src="/svg/bx-hash.svg" alt="" />Explore</a>
                     </li>
                     <li>
-                        <a href="#">Notifications</a>
+                        <a href="#"><img className='w-10' src="/svg/bx-bell.svg" alt="" />Notifications</a>
                     </li>
                     <li>
-                        <a href="#">Profile</a>
+                        <a href="#"><img className='w-10' src="/svg/bxs-user.svg" alt="" />Profile</a>
                     </li>
                 </ul>
                 <button>Tweet</button>
@@ -32,9 +32,10 @@ export default function NavBar() {
                     <div>{ }</div>
                     <div>{ }</div>
                 </div>
-                <div>...</div>
+                <div><a href="#"><img className='w-10' src="/svg/bx-dots-horizontal-rounded.svg" alt="" /></a></div>
                 <div>
-                    <div>Log out</div>
+                    {/* // change this to Link later */}
+                    <div><a href="#">Log out</a></div>
                 </div>
             </div>
             {/* lower list */}
