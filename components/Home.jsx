@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import Link from 'next/link'
 
+
+import { useRef } from 'react';
+// this is very imporant as it extract the data from react 
+
 export default function Home(props) {
     // console.log(props.tweet)
     const [message, setMessage] = useState([])

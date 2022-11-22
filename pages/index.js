@@ -5,32 +5,39 @@ import { Fragment } from 'react'
 
 import styles from '../styles/Home.module.css'
 
-import NavBar from '../components/NavBar.jsx'
-import SideBar from '../components/SideBar.jsx'
+import NavBar from '../components/layout/NavBar.jsx'
+import SideBar from '../components/layout/SideBar.jsx'
 // import Home from '../components/Home.jsx'
 
 // This page should just redirt them to the home.js (need to be created)
 
 export default function HomePage() {
   // temp user
-  const user = {
+  const user = [{
     _id: 1,
     name: "birdy",
     username: "bird",
     password: "password123"
-  }
-  const user2 = {
+  },
+  {
     _id: 2,
     name: "birdy 2",
     username: "bird 2",
     password: "password123"
-  }
+  }]
   //temp tweet
-  const tweet = {
-    _id: 1,
-    username: "bird",
-    message: "This is a message."
-  }
+  const tweet = [
+    {
+      _id: 1,
+      username: "bird",
+      message: "This is a message."
+    },
+    {
+      _id: 2,
+      username: "bird 2",
+      message: "This is a message."
+    }
+  ]
 
   return (
     <div className={styles.container}>
@@ -39,44 +46,6 @@ export default function HomePage() {
         <meta name="description" content="Clone of the blue bird I meant twitter" />
         <link rel="icon" href="/Twitter-logo.svg" />
       </Head>
-      <header>
-        <NavBar />
-      </header>
-      <main>
-        <div>
-          {/* home section  */}
-          <Fragment>
-            <section>
-
-              <div>Home</div>
-            </section>
-            <section>
-              <div>
-                <form action="">
-                  <div>Profilo img</div>
-                  <input type="text" placeholder="What's happening?" />
-                  <button type="submit">Tweet</button>
-                </form>
-              </div>
-            </section>
-            {/* // output the db stuff here  */}
-            <section>
-              <div>
-                <Link href={user.username}><div>{user.username}</div></Link>
-                <div>message</div>
-              </div>
-              <div>
-                <Link href={user2.username}><div>{user2.username}</div></Link>
-                <div>message</div>
-              </div>
-            </section>
-          </Fragment>
-          {/* home section  */}
-
-          {/* <Home /> */}
-          <SideBar />
-        </div>
-      </main >
     </div >
   )
 }
