@@ -1,21 +1,25 @@
-import { useState } from 'react';
-import Link from 'next/link'
 
 
 import { useRef } from 'react';
 // this is very imporant as it extract the data from react 
 
 export default function Home(props) {
-    // console.log(props.tweet)
-    const [message, setMessage] = useState([])
-    const messages = []
 
-    function handleInput(e) {
-        {/* store input data to db  */ }
-        // e.preventdefault()
-        messages.push(e.target.value)
+    const inputEle = useRef();
+
+    function handleSubmitInput(event) {
+        event.preventDefault();
+
+        const getInputEle = inputEle.current.value;
+
+        const messageData = {
+            // need to get userid too and pass it up
+            message: getInputEle,
+        };
+
+        props.onClick(messageData);
     }
-    console.log(`vaule is: ${messages}`)
+
 
     return (
         <div>
@@ -24,15 +28,14 @@ export default function Home(props) {
             </section>
             <section>
                 <div>
-                    <form action="">
+                    <form action="" onSubmit={handleSubmitInput}>
                         <div>Profilo img</div>
-                        <input type="text" placeholder="What's happening?" />
-                        <button onSubmit={handleInput} type="submit">Tweet</button>
+                        <input type="text" placeholder="What's happening?" id="messageInput" ref={inputEle} />
+                        <button type="submit">Tweet</button>
                     </form>
                 </div>
             </section>
             <section>
-                <div>{messages}</div>
                 <div>
                     <div>user</div>
                     <div>message</div>

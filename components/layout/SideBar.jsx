@@ -1,6 +1,7 @@
+
 export default function SideBar() {
     return (
-        <div>
+        <div className="tempRight">
             <section>
                 <input type="text" placeholder="Search BlueBird" />
             </section>

@@ -1,7 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-// import Link from 'next/link'
-
 
 import Home from '../../components/Home.jsx'
 
@@ -10,10 +6,13 @@ import Home from '../../components/Home.jsx'
 
 export default function HomePage() {
 
-    // might just delete this and use idex.js as home... if i can't find it online in later time
+    function AddInputSubmit(inputData) {
+        console.log(inputData)
+    }
+
     return (
         <div>
-            <Home />
+            <Home onClick={AddInputSubmit} />
         </div>
     )
 }

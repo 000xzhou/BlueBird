@@ -1,13 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Fragment } from 'react'
-
-import styles from '../styles/Home.module.css'
-
-import NavBar from '../components/layout/NavBar.jsx'
-import SideBar from '../components/layout/SideBar.jsx'
-// import Home from '../components/Home.jsx'
 
 // This page should just redirt them to the home.js (need to be created)
 
@@ -40,7 +31,7 @@ export default function HomePage() {
   ]
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Blue Bird</title>
         <meta name="description" content="Clone of the blue bird I meant twitter" />
