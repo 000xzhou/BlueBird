@@ -22,9 +22,8 @@ export default function Home(props) {
                 <div>
                     <form action="">
                         <div>Profilo img</div>
-                        <input type="text" placeholder="What's happening?"
-                            onChange={handleInput} />
-                        <button type="submit">Tweet</button>
+                        <input type="text" placeholder="What's happening?" />
+                        <button onSubmit={handleInput} type="submit">Tweet</button>
                     </form>
                 </div>
             </section>
