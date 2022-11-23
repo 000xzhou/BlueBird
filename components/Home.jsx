@@ -2,20 +2,22 @@
 
 export default function Home(props) {
 
+    // loop though the array and out in it's own div
+    const box = props.tempInfo.map(data => {
+        return (
+            <div key={data.id}>
+                <br></br>
+                <hr />
+
+                <div>{data.username}</div>
+                <div>{data.message}</div>
+            </div>
+        )
+    })
     return (
         <div>
-
             <section>
-
-                {/* // Note to self... map out the array. Or object. depends on what the database outputs */}
-                <div>
-                    <div>{props.tempInfo[0].username}</div>
-                    <div>{props.tempInfo[0].message}</div>
-                </div>
-                <div>
-                    <div>{props.tempInfo[1].username}</div>
-                    <div>{props.tempInfo[1].message}</div>
-                </div>
+                {box}
             </section>
         </div>
     )

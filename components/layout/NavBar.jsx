@@ -1,4 +1,5 @@
 
+import Image from 'next/image'
 export default function NavBar(props) {
     return (
         <nav>
@@ -6,19 +7,19 @@ export default function NavBar(props) {
                 {/* upper list */}
                 <ul>
                     <li>
-                        <a href="#"><img className='w-10' src="Twitter-logo.svg" alt="" /></a>
+                        <Image className="testFi" src="/svg/Twitter-logo.svg" alt="Vercel Logo" width={40} height={40} />
                     </li>
                     <li>
-                        <a href="#"><img className='w-10' src="/svg/bxs-home-circle.svg" alt="" />Home</a>
+                        <a href="#"><Image className="testFi" src="/svg/bxs-home-circle.svg" alt="Vercel Logo" width={40} height={40} />Home</a>
                     </li>
                     <li>
-                        <a href="#"><img className='w-10' src="/svg/bx-hash.svg" alt="" />Explore</a>
+                        <a href="#"><Image className="testFi" src="/svg/bx-hash.svg" alt="Vercel Logo" width={40} height={40} />Explore</a>
                     </li>
                     <li>
-                        <a href="#"><img className='w-10' src="/svg/bx-bell.svg" alt="" />Notifications</a>
+                        <a href="#"><Image className="testFi" src="/svg/bx-bell.svg" alt="Vercel Logo" width={40} height={40} />Notifications</a>
                     </li>
                     <li>
-                        <a href="#"><img className='w-10' src="/svg/bxs-user.svg" alt="" />Profile</a>
+                        <a href="#"><Image className="testFi" src="/svg/bxs-user.svg" alt="Vercel Logo" width={40} height={40} />Profile</a>
                     </li>
                 </ul>
                 <button>Tweet</button>
@@ -32,7 +33,10 @@ export default function NavBar(props) {
                     <div>{ }</div>
                     <div>{ }</div>
                 </div>
-                <div><a href="#"><img className='w-10' src="/svg/bx-dots-horizontal-rounded.svg" alt="" /></a></div>
+                <div>
+                    <a href="#"><Image className="testFi" src="/svg//bx-dots-horizontal-rounded.svg" alt="Vercel Logo" width={40} height={40} />Profile</a>
+
+                </div>
                 <div>
                     {/* // change this to Link later */}
                     <div><a href="#">Log out</a></div>

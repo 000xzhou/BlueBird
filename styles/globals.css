@@ -15,3 +15,17 @@
 
     /* flex-direction: column; */
 }
+
+.test {
+    fill: rgb(219, 17, 17);
+    outline: red;
+
+}
+
+.testFi {
+    /* filter: invert(100%); */
+}
+
+body {
+    background: rgb(27, 145, 53);
+}
