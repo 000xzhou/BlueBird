@@ -9,6 +9,10 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
+      'black': '#000000',
+      'blackContrast': '#181818',
+      'blue': '#1D9BF0',
+      'blueContrast': '#1a8cd8',
       'tahiti': {
         100: '#cffafe',
         200: '#a5f3fc',
