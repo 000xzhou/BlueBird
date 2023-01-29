@@ -1,5 +1,4 @@
 
-import { useRouter } from 'next/router'
 import ProfilePage from '../../components/ProfilePage.jsx'
 import ProfilePosts from '../../components/ProfilePosts.jsx'
 
