@@ -3,7 +3,7 @@
 import { useRef } from 'react';
 // this is very imporant as it extract the data from react 
 
-export default function FormSubmit(props) {
+export default function FormSubmit() {
 
     const inputEle = useRef();
 
@@ -14,11 +14,11 @@ export default function FormSubmit(props) {
 
         const messageData = {
             // need to get userid too and pass it up
-            message: getInputEle,
+            post: getInputEle,
         };
 
         // It need to be save to server db
-        props.onClick(messageData);
+        // props.onClick(messageData);
     }
 
     return (

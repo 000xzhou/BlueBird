@@ -1,14 +1,11 @@
 
-//This page should return twitter.com/profileUsername/status/message id
-// soo... might have to change stuff
-export default function TweetPage() {
+//This page should return twitter.com/profileUsername/status/message-id
+
+const statusId = () => {
+    // id of post === statusid
     return (
-        <div>
-            <main>
-                <div>
-                    <h1>TweetPage</h1>
-                </div>
-            </main>
-        </div>
+        <div>statusId</div>
     )
 }
+
+export default statusId

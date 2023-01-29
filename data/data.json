@@ -1,0 +1,107 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "Blue Bird",
+            "password": "password"
+        },
+        {
+            "id": 2,
+            "username": "Pink Bird",
+            "password": "password"
+        },
+        {
+            "id": 3,
+            "username": "Yellow Bird",
+            "password": "password"
+        }
+    ],
+    "usersProfile": [
+        {
+            "id": 1,
+            "user": "Blue Bird",
+            "dateJoin": "1-1-2023",
+            "img": [
+                {
+                    "coverImg": "https://media.istockphoto.com/id/1340642632/photo/sunflowers.jpg?s=170667a&w=0&k=20&c=yVQkU_vonXZk0M0oLKRA1kKeEW3UCWceBdSDYv_sSmY=",
+                    "profileImg": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpghttps://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=pexels-pixabay-45201.jpg&fm=jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "user": "Pink Bird",
+            "date-join": "1-1-2023",
+            "Img": [
+                {
+                    "coverImg": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png",
+                    "profileImg": "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "user": "Yellow Bird",
+            "date-join": "1-1-2023",
+            "Img": [
+                {
+                    "coverImg": "https://liftlearning.com/wp-content/uploads/2020/09/default-image.png",
+                    "profileImg": "https://cdn.landesa.org/wp-content/uploads/default-user-image.png"
+                }
+            ]
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "user": "Blue Bird",
+            "post": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum",
+            "reply": [
+                {
+                    "id": 4,
+                    "user": "Blue Bird",
+                    "post": "replying to my own message"
+                },
+                {
+                    "id": 5,
+                    "user": "Pink Bird",
+                    "post": "replying to your post"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "user": "Pink Bird",
+            "post": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum",
+            "reply": [
+                {
+                    "id": 6,
+                    "user": "Yellow Bird",
+                    "post": "replying to some post"
+                },
+                {
+                    "id": 7,
+                    "user": "Blue Bird",
+                    "post": "Hey I love fancy Birds!"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "user": "Yellow Bird",
+            "post": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum",
+            "reply": [
+                {
+                    "id": 8,
+                    "user": "Pink Bird",
+                    "post": "replying to some post"
+                },
+                {
+                    "id": 9,
+                    "user": "Blue Bird",
+                    "post": "Hey I love fried chicken!"
+                }
+            ]
+        }
+    ]
+}
