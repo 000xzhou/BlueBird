@@ -1,7 +1,7 @@
 
 export default function SideBar() {
     return (
-        <div>
+        <div className="hidden md:block">
             <section>
                 <input type="text" placeholder="Search BlueBird" />
             </section>
