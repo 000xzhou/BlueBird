@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "firebase": "^8.10.1",
+    "firebase": "^9.17.2",
     "mongodb": "^5.1.0",
     "next": "13.0.4",
     "react": "18.2.0",
